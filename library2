@@ -1,0 +1,20 @@
+fun main() {val b1=Book("1234","English","shakespere",true)
+    val b2=Book("12345","Math","einstein",true)
+    val b3=Book("123456","Science","newton",false)
+val b4=Book("1234","English","shakespere",true)
+    val b5=Book("12345","Math","einstein",true)
+    val b6=Book("123456","Science","newton",false)
+    var book1=library()
+    book1.addBook(b1)
+    book1.addBook(b2)
+    book1.addBook(b3)
+  book1.addBook(b4)
+    book1.addBook(b5)
+    book1.addBook(b6)
+    book1.borrowBook("00000001")
+    book1.borrowBook(b1.isbn)
+    book1.returnBook(b3.isbn)
+    book1.listAvailableBooks()
+
+
+}
